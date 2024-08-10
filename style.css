@@ -6,6 +6,9 @@
 html {
     scroll-behavior: smooth; /* Habilita a rolagem suave */
 }
+*{
+    scroll-margin-top: 60px;
+}
 
 @font-face {
     font-family: "Macon";
