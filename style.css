@@ -6,6 +6,7 @@
 
 body{
     min-width: 100vh;
+    overflow-x: hidden;
 }
 
 html {
@@ -253,19 +254,17 @@ footer>ul>li:hover{
 }
 
 
+#videosExplicativos{
+    margin-bottom: 200px;
+}
+
 .videos{
-    position: relative;
-    left: 13%;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 .videos > iframe{
     margin: 20px;
-}
-.titulo_video{
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
 }
 
 .data{
@@ -275,17 +274,33 @@ footer>ul>li:hover{
     opacity: 70%;
 }
 
-.header_topics li:after{
-    content: " ";
-    width: 0%;
-    height: 2px;
-    background-color:rgb(245, 240, 225);
-    top: 0;
-    display: block;
+.header_topics li {
+    position: relative;
+    list-style: none;
 }
 
-.header_topics li:hover::after{
+.header_topics li::after {
+    content: "";
     width: 100%;
-    transition: 0.2s ease-out;
+    height: 2px;
+    background-color: rgb(245, 240, 225);
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    display: block;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
 }
+
+.header_topics li:hover::after {
+    transform: scaleX(1);
+}
+
+.header_topics li:not(:hover)::after {
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
 
