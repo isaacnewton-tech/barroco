@@ -145,10 +145,18 @@ header.visible{
     gap: 30px;
 
 }
-.view *{
+/* isso resolve o problema de redirecionamento do header e o h1 não aparecer*/
+.view .bloco .conteudos{
     animation: appear linear;
     animation-timeline: view();
-    animation-range: entry 0 cover 30%;
+    animation-range: entry 0 cover 40%;
+}
+
+/* isso resolve o problema de redirecionamento do header e o h1 não aparecer*/
+.titulo_bloco{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 @keyframes appear{
     from{
