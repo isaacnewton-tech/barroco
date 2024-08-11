@@ -1,6 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 100vh;
 }
 
 html {
@@ -57,7 +62,7 @@ header.visible{
 }
 #topics{
     height: 100%;
-    width: 50%;
+    width: 60%;
 
 }
 #topics > ul{
@@ -79,7 +84,7 @@ header.visible{
     transition: .3s;
 }
 #topics li:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: .3s;
 }
 
@@ -107,7 +112,7 @@ header.visible{
     justify-content: center;
     align-items: center;
 }
-.bootstrap p{
+.bootstrap .sub_titulo{
     font-family: "Macon";
     font-size: 50px;
 }
@@ -221,7 +226,7 @@ footer{
     width: 100%;
     height: 300px;
     background-color: #110f09;
-    color: white;
+    color: rgb(245, 240, 225);
 
     display: flex;
     justify-content: center;
@@ -246,3 +251,41 @@ footer>ul>li:hover{
     transform: scale(1.1);
     transition: .2s;
 }
+
+
+.videos{
+    position: relative;
+    left: 13%;
+}
+
+.videos > iframe{
+    margin: 20px;
+}
+.titulo_video{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.data{
+    margin-top: 200px;
+    font-family: "poppins";
+    font-size: 25px;
+    opacity: 70%;
+}
+
+.header_topics li:after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color:rgb(245, 240, 225);
+    top: 0;
+    display: block;
+}
+
+.header_topics li:hover::after{
+    width: 100%;
+    transition: 0.2s ease-out;
+}
+
