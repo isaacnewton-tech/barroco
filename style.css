@@ -22,6 +22,7 @@ html {
 
 
 header{
+    user-select: none;
     height: 80px;
     width: 100%;
 
