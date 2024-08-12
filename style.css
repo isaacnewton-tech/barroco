@@ -58,6 +58,7 @@ header.visible{
     font-size: 40px;
 }
 #title > img{
+    margin: 0 15px;
     height: 80%;
     border-radius: 10px;
 }
