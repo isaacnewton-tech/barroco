@@ -349,4 +349,9 @@ footer>ul>li:hover{
     transition: transform 0.3s ease;
 }
 
+#title a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
 
