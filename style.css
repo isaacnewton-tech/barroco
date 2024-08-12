@@ -70,6 +70,15 @@ header.visible{
     #topics, #title>p{
         display: none;
     }
+    footer>ul>li>img{
+        min-width: 70px;
+        width: 70px;
+        max-width: 70px;
+
+        min-height: 70px;
+        height: 70px;
+        max-height: 70px;
+    }
 }
 #topics > ul{
     height: 100%;
@@ -255,9 +264,15 @@ footer>ul{
     flex-flow: column nowrap;
     gap: 20px;
 }
-footer>ul>li>img{
+footer img{
+    min-height: 100px;
+    max-height: 100px;
     height: 100px;
+
     width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+
     object-fit: cover;
     border-radius: 100%;
 }
