@@ -25,7 +25,7 @@ header{
     user-select: none;
     height: 80px;
     min-width: 100vw;
-    
+
 
     box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.3);
     position: fixed;
@@ -79,6 +79,15 @@ header.visible{
         min-height: 70px;
         height: 70px;
         max-height: 70px;
+    }
+    div.videos{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 40px;
+    }
+    div.videos iframe{
+        width: 70vw;
+        height: 40vw;
     }
 }
 #topics > ul{
