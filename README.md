@@ -1,4 +1,4 @@
-Barroco - Página Interativa
+# **Barroco - Página Interativa**
 
 Este projeto foi desenvolvido com HTML, CSS e JavaScript para apresentar de forma interativa e didática as principais características do estilo artístico Barroco.
 
