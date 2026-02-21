@@ -2,6 +2,9 @@
 
 Este projeto foi desenvolvido com HTML, CSS e JavaScript para apresentar de forma interativa e didática as principais características do estilo artístico Barroco.
 
+Link do site, pelo GitHub Pages:
+https://isaacnewton-tech.github.io/barroco/
+
 🎨 Sobre o Projeto
 O site tem como objetivo explicar o contexto histórico, os principais autores e obras do Barroco, utilizando uma interface moderna e responsiva.
 
